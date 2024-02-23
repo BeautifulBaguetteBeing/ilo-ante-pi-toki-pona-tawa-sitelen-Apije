@@ -12,15 +12,35 @@ function transformInputSame(userInput) {
   }
 
   if (document.getElementById("chkReplaceNW").checked) {
-    transformedInput = transformedInput.replace(/nw/g, 'ŋʷw').replace(/n \'w/g, 'ŋʷ \'w');;
+    transformedInput = transformedInput.replace(/nw/g, 'ŋʷw').replace(/n \'w/g, 'ŋʷ \'w');
   }
 
   if (document.getElementById("chkReplaceNK").checked) {
-    transformedInput = transformedInput.replace(/nk/g, 'ŋk').replace(/n \'k/g, 'ɲ \'k');;
+    transformedInput = transformedInput.replace(/nk/g, 'ŋk').replace(/n \'k/g, 'ɲ \'k');
   }
 
   if (document.getElementById("chkReplaceNW2").checked) {
-    transformedInput = transformedInput.replace(/nw/g, 'nʷw').replace(/n \'w/g, 'nʷ \'w');;
+    transformedInput = transformedInput.replace(/nw/g, 'nʷw').replace(/n \'w/g, 'nʷ \'w');
+  }
+
+  if (document.getElementById("chkReplaceAN").checked) {
+    transformedInput = transformedInput.replace(/an/g, 'ã');
+  }
+
+  if (document.getElementById("chkReplaceEN").checked) {
+    transformedInput = transformedInput.replace(/en/g, 'ẽ');
+  }
+
+  if (document.getElementById("chkReplaceIN").checked) {
+    transformedInput = transformedInput.replace(/in/g, 'ĩ');
+  }
+
+  if (document.getElementById("chkReplaceON").checked) {
+    transformedInput = transformedInput.replace(/on/g, 'õ');
+  }
+
+  if (document.getElementById("chkReplaceUN").checked) {
+    transformedInput = transformedInput.replace(/un/g, 'ũ');
   }
 
   transformedInput += "]";
