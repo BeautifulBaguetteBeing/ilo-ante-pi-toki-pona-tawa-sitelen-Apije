@@ -19,6 +19,10 @@ function transformInputSame(userInput) {
     transformedInput = transformedInput.replace(/nk/g, 'ŋk').replace(/n \'k/g, 'ɲ \'k');;
   }
 
+  if (document.getElementById("chkReplaceNW2").checked) {
+    transformedInput = transformedInput.replace(/nw/g, 'nʷw').replace(/n \'w/g, 'nʷ \'w');;
+  }
+
   transformedInput += "]";
   return transformedInput;
 }
