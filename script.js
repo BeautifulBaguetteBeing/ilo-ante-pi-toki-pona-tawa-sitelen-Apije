@@ -24,25 +24,44 @@ function transformInputSame(userInput) {
   }
 
   if (document.getElementById("chkReplaceAN").checked) {
-    transformedInput = transformedInput.replace(/an/g, 'ã');
+    transformedInput = transformedInput.replace(/an/g, 'ä̃:');
   }
 
   if (document.getElementById("chkReplaceEN").checked) {
-    transformedInput = transformedInput.replace(/en/g, 'ẽ');
+    transformedInput = transformedInput.replace(/en/g, 'ẽ̞:');
   }
 
   if (document.getElementById("chkReplaceIN").checked) {
-    transformedInput = transformedInput.replace(/in/g, 'ĩ');
+    transformedInput = transformedInput.replace(/in/g, 'ĩ:');
   }
 
   if (document.getElementById("chkReplaceON").checked) {
-    transformedInput = transformedInput.replace(/on/g, 'õ');
+    transformedInput = transformedInput.replace(/on/g, 'õ̞:');
   }
 
   if (document.getElementById("chkReplaceUN").checked) {
-    transformedInput = transformedInput.replace(/un/g, 'ũ');
+    transformedInput = transformedInput.replace(/un/g, 'ũ:');
   }
 
+  if (document.getElementById("chkReplaceAN2").checked) {
+    transformedInput = transformedInput.replace(/an/g, 'ä̃n');
+  }
+
+  if (document.getElementById("chkReplaceEN2").checked) {
+    transformedInput = transformedInput.replace(/en/g, 'ẽ̞n');
+  }
+
+  if (document.getElementById("chkReplaceIN2").checked) {
+    transformedInput = transformedInput.replace(/in/g, 'ĩn');
+  }
+
+  if (document.getElementById("chkReplaceON2").checked) {
+    transformedInput = transformedInput.replace(/on/g, 'õ̞n');
+  }
+
+  if (document.getElementById("chkReplaceUN2").checked) {
+    transformedInput = transformedInput.replace(/un/g, 'ũn');
+  }
   transformedInput += "]";
   return transformedInput;
 }
