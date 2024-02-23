@@ -24,11 +24,11 @@ function transformInputSame(userInput) {
   }
 
   if (document.getElementById("chkReplaceAN").checked) {
-    transformedInput = transformedInput.replace(/an/g, 'ä̃:');
+    transformedInput = transformedInput.replace(/än/g, 'ä̃:');
   }
 
   if (document.getElementById("chkReplaceEN").checked) {
-    transformedInput = transformedInput.replace(/en/g, 'ẽ̞:');
+    transformedInput = transformedInput.replace(/e̞n/g, 'ẽ̞:');
   }
 
   if (document.getElementById("chkReplaceIN").checked) {
@@ -36,7 +36,7 @@ function transformInputSame(userInput) {
   }
 
   if (document.getElementById("chkReplaceON").checked) {
-    transformedInput = transformedInput.replace(/on/g, 'õ̞:');
+    transformedInput = transformedInput.replace(/o̞n/g, 'õ̞:');
   }
 
   if (document.getElementById("chkReplaceUN").checked) {
@@ -44,11 +44,11 @@ function transformInputSame(userInput) {
   }
 
   if (document.getElementById("chkReplaceAN2").checked) {
-    transformedInput = transformedInput.replace(/an/g, 'ä̃n');
+    transformedInput = transformedInput.replace(/än/g, 'ä̃n');
   }
 
   if (document.getElementById("chkReplaceEN2").checked) {
-    transformedInput = transformedInput.replace(/en/g, 'ẽ̞n');
+    transformedInput = transformedInput.replace(/e̞n/g, 'ẽ̞n');
   }
 
   if (document.getElementById("chkReplaceIN2").checked) {
@@ -56,7 +56,7 @@ function transformInputSame(userInput) {
   }
 
   if (document.getElementById("chkReplaceON2").checked) {
-    transformedInput = transformedInput.replace(/on/g, 'õ̞n');
+    transformedInput = transformedInput.replace(/o̞n/g, 'õ̞n');
   }
 
   if (document.getElementById("chkReplaceUN2").checked) {
