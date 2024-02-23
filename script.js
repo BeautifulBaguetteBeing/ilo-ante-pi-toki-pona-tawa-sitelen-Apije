@@ -6,7 +6,7 @@ function transformInputSame(userInput) {
 
 function transformInputDifferent(userInput) {
   userInput = userInput.toLowerCase();
-  let transformedInput = "[" + userInput.replace(/^(?!([aeiou]|[jklmnpstw][aeiou]|[jklmnpstw][aeiou]n)\b)/gm, '\'').replace(/\s(?!([aeiou]|[jklmnpstw][aeiou]|[jklmnpstw][aeiou]n)\b)/g, ' \'').replace(/a/g, 'ä').replace(/e/g, 'e̞').replace(/o/g, 'o̞') + "]";
+  let transformedInput = "[" + userInput.replace(/^(?!([aeiou]|[jklmnpstw][aeiou]|[jklmnpstw][aeiou]n)\b)/gm, '\'').replace(/\s(?!([aeiou]|[jklmnpstw][aeiou]|[jklmnpstw][aeiou]n)\b)/g, ' \'').replace(/a/g, 'ä').replace(/e/g, 'e̞').replace(/o/g, 'o̞').replace(/kije̞te̞säntäkälu/g, 'kije̞te̞sänˌtäkälu') + "]";
   return transformedInput;
 }
 
