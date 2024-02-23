@@ -1,4 +1,4 @@
-# ilo ante pi toki-pona tawa sitelen Apije
+# ilo ante pi toki pona tawa sitelen Apije
 pana sona a! mi pan Waja! mi lon e ilo ni tan ni: mi wile toki kepeken sitelen Apije!
 
 # nasin kepeken
