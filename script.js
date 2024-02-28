@@ -8,10 +8,8 @@ function transformInputSame(userInput) {
   let transformedInput = "[" + userInput.replace(/^(?!([aeiou]|[jklmnpstw][aeiou]|[jklmnpstw][aeiou]n)\b)/gm, '\'').replace(/\s(?!([aeiou]|[jklmnpstw][aeiou]|[jklmnpstw][aeiou]n)\b)/gm, ' \'').replace(/kijetesantakalu/g, 'kijetesanˌtakalu').replace(/a/g, 'ä').replace(/e/g, 'e̞').replace(/o/g, 'o̞');
 
   if (document.getElementById("chkReplaceAN").checked) {
-    alert(transformedInput)
     transformedInput = transformedInput.replace(/än(?![aeiouäe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ä̃:');
     sleep(10)
-    alert(transformedInput)
   }
 
   if (document.getElementById("chkReplaceEN").checked) {
