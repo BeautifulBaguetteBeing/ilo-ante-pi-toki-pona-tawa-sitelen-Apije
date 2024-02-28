@@ -8,52 +8,52 @@ function transformInputSame(userInput) {
   let transformedInput = "[" + userInput.replace(/^(?!([aeiou]|[jklmnpstw][aeiou]|[jklmnpstw][aeiou]n)\b)/gm, '\'').replace(/\s(?!([aeiou]|[jklmnpstw][aeiou]|[jklmnpstw][aeiou]n)\b)/gm, ' \'').replace(/kijetesantakalu/g, 'kijetesanˌtakalu').replace(/a/g, 'ä').replace(/e/g, 'e̞').replace(/o/g, 'o̞');
 
   if (document.getElementById("chkReplaceAN").checked) {
-    transformedInput = transformedInput.replace(/än/g, 'ä̃:');
+    transformedInput = transformedInput.replace(/än(?![aeiou])/g, 'ä̃:');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceEN").checked) {
-    transformedInput = transformedInput.replace(/e̞n/g, 'ẽ̞:');
+    transformedInput = transformedInput.replace(/e̞n(?![aeiou])/g, 'ẽ̞:');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceIN").checked) {
-    transformedInput = transformedInput.replace(/in/g, 'ĩ:');
+    transformedInput = transformedInput.replace(/in(?![aeiou])/g, 'ĩ:');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceON").checked) {
-    transformedInput = transformedInput.replace(/o̞n/g, 'õ̞:');
+    transformedInput = transformedInput.replace(/o̞n(?![aeiou])/g, 'õ̞:');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceUN").checked) {
-    transformedInput = transformedInput.replace(/un/g, 'ũ:');
+    transformedInput = transformedInput.replace(/un(?![aeiou])/g, 'ũ:');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceAN2").checked) {
-    transformedInput = transformedInput.replace(/än/g, 'ä̃n');
+    transformedInput = transformedInput.replace(/än(?![aeiou])/g, 'ä̃n');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceEN2").checked) {
-    transformedInput = transformedInput.replace(/e̞n/g, 'ẽ̞n');
+    transformedInput = transformedInput.replace(/e̞n(?![aeiou])/g, 'ẽ̞n');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceIN2").checked) {
-    transformedInput = transformedInput.replace(/in/g, 'ĩn');
+    transformedInput = transformedInput.replace(/in(?![aeiou])/g, 'ĩn');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceON2").checked) {
-    transformedInput = transformedInput.replace(/o̞n/g, 'õ̞n');
+    transformedInput = transformedInput.replace(/o̞n(?![aeiou])/g, 'õ̞n');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceUN2").checked) {
-    transformedInput = transformedInput.replace(/un/g, 'ũn');
+    transformedInput = transformedInput.replace(/un(?![aeiou])/g, 'ũn');
     sleep(10)
   }
   
