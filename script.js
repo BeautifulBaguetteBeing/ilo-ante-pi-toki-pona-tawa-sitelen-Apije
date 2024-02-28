@@ -8,52 +8,54 @@ function transformInputSame(userInput) {
   let transformedInput = "[" + userInput.replace(/^(?!([aeiou]|[jklmnpstw][aeiou]|[jklmnpstw][aeiou]n)\b)/gm, '\'').replace(/\s(?!([aeiou]|[jklmnpstw][aeiou]|[jklmnpstw][aeiou]n)\b)/gm, ' \'').replace(/kijetesantakalu/g, 'kijetesanˌtakalu').replace(/a/g, 'ä').replace(/e/g, 'e̞').replace(/o/g, 'o̞');
 
   if (document.getElementById("chkReplaceAN").checked) {
-    transformedInput = transformedInput.replace(/än(?![äe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ä̃:');
+    alert(transformedInput)
+    transformedInput = transformedInput.replace(/än(?![aeiouäe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ä̃:');
     sleep(10)
+    alert(transformedInput)
   }
 
   if (document.getElementById("chkReplaceEN").checked) {
-    transformedInput = transformedInput.replace(/e̞n(?![äe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ẽ̞:');
+    transformedInput = transformedInput.replace(/e̞n(?![aeiouäe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ẽ̞:');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceIN").checked) {
-    transformedInput = transformedInput.replace(/in(?![äe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ĩ:');
+    transformedInput = transformedInput.replace(/in(?![aeiouäe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ĩ:');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceON").checked) {
-    transformedInput = transformedInput.replace(/o̞n(?![äe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'õ̞:');
+    transformedInput = transformedInput.replace(/o̞n(?![aeiouäe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'õ̞:');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceUN").checked) {
-    transformedInput = transformedInput.replace(/un(?![äe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ũ:');
+    transformedInput = transformedInput.replace(/un(?![aeiouäe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ũ:');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceAN2").checked) {
-    transformedInput = transformedInput.replace(/än(?![äe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ä̃n');
+    transformedInput = transformedInput.replace(/än(?![aeiouäe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ä̃n');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceEN2").checked) {
-    transformedInput = transformedInput.replace(/e̞n(?![äe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ẽ̞n');
+    transformedInput = transformedInput.replace(/e̞n(?![aeiouäe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ẽ̞n');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceIN2").checked) {
-    transformedInput = transformedInput.replace(/in(?![äe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ĩn');
+    transformedInput = transformedInput.replace(/in(?![aeiouäe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ĩn');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceON2").checked) {
-    transformedInput = transformedInput.replace(/o̞n(?![äe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'õ̞n');
+    transformedInput = transformedInput.replace(/o̞n(?![aeiouäe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'õ̞n');
     sleep(10)
   }
 
   if (document.getElementById("chkReplaceUN2").checked) {
-    transformedInput = transformedInput.replace(/un(?![äe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ũn');
+    transformedInput = transformedInput.replace(/un(?![aeiouäe̞io̞uä̃ẽ̞ĩõ̞ũ])/g, 'ũn');
     sleep(10)
   }
   
